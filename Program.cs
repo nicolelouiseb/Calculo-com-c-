@@ -1,6 +1,11 @@
-﻿double valori,valorf;
-double aumento=0.10;
-Console.WriteLine("Insira o valor do produto:");
-valori=double.Parse(Console.ReadLine());
-valorf=valori-(valori*aumento);
-Console.WriteLine("O valor final após o desconto é de:{0}",valorf);
+﻿
+double bma,bme,alt, result;
+Console.WriteLine("Insira o valor da base menor:");
+bme=double.Parse(Console.ReadLine());
+Console.WriteLine("Insira o valor da base maior:");
+bma=double.Parse(Console.ReadLine());
+Console.WriteLine("Insira o valor da altura:");
+alt=double.Parse(Console.ReadLine());
+result=((bma+bme)*alt)/2;
+Console.WriteLine("A area do trapézio é:{0}", result);
+
